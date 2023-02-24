@@ -1,0 +1,123 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    background: url(../image/cover.jpg);
+    background-size: 100%;
+}
+
+/*left-header and logo */
+#left {
+    display: inline-block;
+    position: absolute;
+    left: 3%;
+    text-align: center;
+    width: 10vw;
+    top: 1%;
+    /* border: 2px solid red; */
+}
+
+#left img {
+    filter: invert(100%);
+    width: 30%;
+    margin-bottom: 0.3vw;
+}
+
+#left h1 {
+    line-height: 0%;
+    font-size: 1.5vw;
+  
+}
+
+/* middle  */
+#middle {
+    /* border: 2px solid red; */
+    width: 50vw;
+    display: block;
+    margin: 1vw auto;
+}
+
+/* middle navigation */
+#navbar ul li {
+    display: inline-block;
+
+}
+
+#navbar ul li a {
+    font-size: 2vw;
+    color: white;
+    padding: 1vw;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* right */
+#right {
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    /* border: 2px solid red; */
+}
+
+/* right button */
+.btn {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1vw;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 0.3vw 1vw;
+    margin: 0vw 0.7vw;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(250, 246, 246);
+    background-color: rgb(55, 4, 91);
+}
+
+#contact{
+    background-color: #000;
+}
+/* form */
+#container {
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 4vw 8vw;
+    padding: 2vw 5vw;
+}
+#container h1{
+    text-align: center;
+    font-size: 2.5vw;
+}
+#form-group input {
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 30vw;
+    font-size: 1.2vw;
+    display: block;
+    margin: 4px auto;
+    padding: 3px auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+/* form button */
+#form-btn {
+    display: block;
+    margin: 8px auto;
+    width: 100%;
+    margin-left: 5px auto;
+}
