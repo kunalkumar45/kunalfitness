@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@900&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #dbdada;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+/* -------navigation-------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dbdada;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin: 0 10px 0 25px;
+}
+
+.navbar .logo h2 {
+    color: brown;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+/* -------navigation burger------ */
+#burger {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+#burger i {
+    display: none;
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#burger i:hover {
+    color: black;
+}
+
+/* home section */
+.home {
+    background: radial-gradient(#858788, #fff);
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    align-items: center;
+    min-width: 250px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    margin-top: 80px;
+}
+
+.col-2 h5 {
+    margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.col-2 h1 {
+    text-transform: uppercase;
+    color: #ff0000;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.col-2 h4 {
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.col-2 i {
+    font-size: 20px;
+}
+
+.col-2 button {
+    display: block;
+    text-transform: uppercase;
+    background: #a52a2a;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.col-2 button:hover {
+    background: #7d1717;
+}
+
+/* about section */
+.about {
+    background: #fff;
+}
+
+.title h2 {
+    color: navy;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 0 10px 0;
+}
+
+.title p {
+    text-align: center;
+    text-transform: uppercase;
+    color: brown;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.col-2 h3 {
+    color: #990779;
+    font-size: 17px;
+}
+
+.col-2 p {
+    padding: 10px 0;
+}
+
+.about .col-2 img {
+    margin-top: 0;
+}
+
+/* our classes */
+.classes {
+    background: #dbdada;
+}
+
+.col-4 {
+    max-width: 250px;
+    height: 400px;
+    align-items: center;
+    justify-items: center;
+    background: tan;
+    margin: 0 20px 50px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 2px rgba(192, 215, 98, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.col-4:hover {
+    transform: translateY(-10px);
+}
+
+.col-4 .cl-img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.col-4 h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #d01b1e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.col-4 p {
+    padding-bottom: 40px;
+    text-align: center;
+    color: #000;
+}
+
+/* our coaches */
+
+.coaches .card {
+    max-width: 450px;
+    min-width: 250px;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 20px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.coaches .card:hover {
+    transform: translateY(-10px);
+}
+
+.coaches .card img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.coaches .card p {
+    font-size: 15px;
+    margin: 12px;
+    color: #777;
+}
+
+.coaches .card h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 20px;
+}
+
+.coaches .card h4 {
+    font-weight: 600;
+    color: #a20000;
+    font-size: 20px;
+}
+
+/* contact us */
+.contact {
+    background: #dbdada;
+    padding-bottom: 50px;
+
+}
+
+.contact form input,
+textarea {
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid gray;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.contact form label {
+    font-size: 18px;
+}
+
+.contact form input[type=submit] {
+    width: 150px;
+    background: #4169e1;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact form input[type=submit]:hover {
+    background: #0e2f93;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.s-icon,
+.add {
+    margin-bottom: 20px;
+}
+
+.col-2 .box .s-icon .fa-solid {
+    font-size: 40px;
+    margin-left: 30px;
+    padding: 20px 0;
+}
+
+.add {
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+.add a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ---footer--- */
+footer {
+    font-size: 18px;
+    padding: 30px 0 20px;
+}
+
+footer p {
+    color: #000;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
